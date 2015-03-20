@@ -7,6 +7,10 @@ This is where you can drop your custom functions or
 just edit things like thumbnail sizes, header images, 
 sidebars, comments, ect.
 */
+add_action('after_setup_theme', 'my_theme_setup');
+function my_theme_setup(){
+		load_theme_textdomain('wpf', get_template_directory() . '/languages');
+}
 
 // Get Bones Core Up & Running!
 require_once('library/bones.php');            // core functions (don't remove)

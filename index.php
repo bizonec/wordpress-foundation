@@ -25,7 +25,7 @@
 						
 						<footer>
 			
-							<p class="tags"><?php the_tags('<span class="tags-title">Tags:</span> ', ' ', ''); ?></p>
+							<p class="tags"><?php the_tags('<span class="tags-title">'. __("Tags:", "wpf"); . '</span> ', ' ', ''); ?></p>
 							
 						</footer> <!-- end article footer -->
 					
@@ -52,10 +52,10 @@
 					
 					<article id="post-not-found">
 					    <header>
-					    	<h1>Not Found</h1>
+					    	<h1><?php _e("Not Found", "wpf"); ?></h1>
 					    </header>
 					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
+					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "wpf"); ?></p>
 					    </section>
 					    <footer>
 					    </footer>
