@@ -10,7 +10,7 @@
 
 							<!-- This content shows up if there are no widgets defined in the backend. -->
 							
-							<p>Please activate some Widgets.</p>
+							<p><?php _e("Please activate some Widgets.", "wpf"); ?></p>
 
 						<?php endif; ?>
 

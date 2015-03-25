@@ -56,10 +56,10 @@
 					
 					<article id="post-not-found">
 					    <header>
-					    	<h1>Not Found</h1>
+					    	<h1><?php _e("Not Found", "wpf"); ?></h1>
 					    </header>
 					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
+					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "wpf"); ?></p>
 					    </section>
 					    <footer>
 					    </footer>
@@ -77,7 +77,7 @@
 								
 					<!-- Using WordPress functions to retrieve the extracted EXIF information from database -->
 					<div class="panel">
-						<h3>Image metadata</h3>
+						<h3><?php _e("Image metadata", "wpf"); ?></h3>
 
 					<p>
 					   <?php

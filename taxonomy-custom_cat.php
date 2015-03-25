@@ -67,10 +67,10 @@ taxonomy-shoes.php
 					
 					<article id="post-not-found">
 					    <header>
-					    	<h1>No Posts Yet</h1>
+					    	<h1><?php _e("No Posts Yet", "wpf"); ?></h1>
 					    </header>
 					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
+					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "wpf"); ?></p>
 					    </section>
 					    <footer>
 					    </footer>

@@ -4,7 +4,7 @@
 			
 				<div id="main" class="eight columns clearfix" role="main">
 				
-					<h1 class=""><span>Search Results for:</span> <?php echo esc_attr(get_search_query()); ?></h1>
+					<h1 class=""><span><?php _e("Search Results for:", "wpf"); ?></span> <?php echo esc_attr(get_search_query()); ?></h1>
 
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 					
@@ -51,10 +51,10 @@
 					
 					<article id="post-not-found">
 					    <header>
-					    	<h1>No Results Found</h1>
+					    	<h1><?php _e("No Results Found", "wpf"); ?></h1>
 					    </header>
 					    <section class="post_content">
-					    	<p>Sorry, but the requested resource was not found on this site.</p>
+					    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "wpf"); ?></p>
 					    </section>
 					    <footer>
 					    </footer>

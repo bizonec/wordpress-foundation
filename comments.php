@@ -5,11 +5,12 @@ The comments page for Bones
 
 // Do not delete these lines
   if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
-    die ('Please do not load this page directly. Thanks!');
+    $diemsg = "Please do not load this page directly. Thanks!"
+    die ($diemsg);
 
   if ( post_password_required() ) { ?>
   	<div class="alert-box">
-    	This post is password protected. Enter the password to view comments.
+    	<?php _e("This post is password protected. Enter the password to view comments.", "wpf"); ?>
   	</div>
   <?php
     return;
@@ -57,7 +58,7 @@ The comments page for Bones
 		<?php else : ?>
 		
 			<!-- If comments are closed. -->
-			<div class="alert-box">Comments are closed.</div>
+			<div class="alert-box"><?php _e("Comments are closed.", "wpf"); ?></div>
 			
 		<?php endif; ?>
 
@@ -78,7 +79,7 @@ The comments page for Bones
 
 	<?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
   	<div class="alert-box warning">
-  		<p>You must be <a href="<?php echo wp_login_url( get_permalink() ); ?>">logged in</a> to post a comment.</p>
+  		<p><?php _e("You must be", "wpf"); ?> <a href="<?php echo wp_login_url( get_permalink() ); ?>"><?php _e("logged in", "wpf"); ?></a> <?php _e("to post a comment.", "wpf"); ?></p>
   	</div>
 	<?php else : ?>
 

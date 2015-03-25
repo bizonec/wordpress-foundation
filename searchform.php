@@ -6,7 +6,7 @@
 	        <input type="text" id="search" placeholder="Search" name="s" value="<?php the_search_query(); ?>" />
 	      </div>
 	      <div class="four mobile-one columns">
-	        <button type="submit" id="search-button" class="postfix button">Search</button>
+	        <button type="submit" id="search-button" class="postfix button"><?php _e("Search", "wpf"); ?></button>
 	      </div>
   		</form>
     </div>
